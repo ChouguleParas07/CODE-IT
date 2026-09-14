@@ -37,7 +37,21 @@ export default defineConfig({
         inlineDynamicImports: false,
         assetFileNames: "assets/[hash].[ext]",
         entryFileNames: "chunks/[name]-[hash].js",
-        chunkFileNames: "chunks/[hash].js",
+        chunkFileNames: "chunks/[name]-[hash].js",
+        manualChunks(id) {
+          if (id.includes("node_modules")) {
+            if (id.includes("three")) {
+              return "three";
+            }
+            if (id.includes("gsap")) {
+              return "gsap";
+            }
+            if (id.includes("vue")) {
+              return "vue";
+            }
+            return "vendor";
+          }
+        },
       },
     },
   },
