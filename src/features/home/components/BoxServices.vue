@@ -114,7 +114,7 @@ const SERVICES_EN = [
   { name: "Docker, Git, REST APIs" },
 ] as const satisfies { name: string }[];
 
-const SERVICES_DE = [
+const SERVICES_HI = [
   { name: "Python, Java, TS, SQL" },
   { name: "React, Next, Tailwind" },
   { name: "FastAPI, Node, Django" },
@@ -123,7 +123,7 @@ const SERVICES_DE = [
 ] as const satisfies { name: string }[];
 
 const services = computed(() => {
-  return locale.value === "en" ? SERVICES_EN : SERVICES_DE;
+  return locale.value === "en" ? SERVICES_EN : SERVICES_HI;
 });
 </script>
 
