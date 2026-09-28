@@ -1,14 +1,14 @@
-import thumbnailRental from "../../../assets/thumbnails/rental.png";
+import thumbnailRental from "../../../assets/images/projects/stashly-rent-a-thing/Screenshot 2026-09-28 094507.png";
 import thumbnailEcommerce from "../../../assets/thumbnails/ecommerce.png";
 
 import type { ProjectPreview } from "../../types";
 
 export default [
   {
-    title: "Hyperlocal Rental Marketplace",
+    title: "Stashly — Rent a Thing",
     slug: "rental",
     thumbnail: thumbnailRental,
-    description: "React, Python, PostgreSQL",
+    description: "Vue, TypeScript, UI design",
   },
   {
     title: "E-Commerce Platform",
